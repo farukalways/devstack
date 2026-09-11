@@ -10,11 +10,13 @@ const Banner = () => {
             {/* হেডিং - সম্পূর্ণ বোল্ড */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Build Your Ideal, <br className="hidden sm:inline" />
-              Development Stack
+              <span className="bg-gradient-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">
+                Development Stack
+              </span>
             </h1>
 
             {/* ডেসক্রিপশন - বোল্ড টেক্সট */}
-            <p className="text-base sm:text-lg text-gray-800 font-bold leading-relaxed py-10">
+            <p className="text-base sm:text-lg text-gray-800 font-semibold leading-relaxed py-10">
               Explore frontend, backend, database, and tooling options, compare
               them side by side, and put together the stack that fits your next
               project.
@@ -24,7 +26,7 @@ const Banner = () => {
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
                 href="#"
-                className="bg-blue-600 hover:bg-blue-700 text-white font-bold text-sm sm:text-base px-6 py-3 rounded-lg transition duration-300 shadow-md hover:shadow-lg"
+                className="bg-gradient-to-r from-[#F97316] to-[#EC4899] hover:opacity-90 text-white font-bold text-sm sm:text-base px-6 py-3 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Explore Technologies
               </a>

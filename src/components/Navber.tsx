@@ -89,13 +89,13 @@ const Navbar = () => {
           <div className="flex items-center space-x-2 sm:space-x-4">
             <a
               href="#"
-              className="text-blue-600 hover:text-blue-700 font-medium text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg border border-blue-600 hover:bg-blue-50 transition"
+              className="text-[#DB2777] hover:text-[#ffff] font-medium text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg border border-[#DB2777] hover:bg-[#DB2777] transition"
             >
               Sign In
             </a>
             <a
               href="#"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-medium text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg transition shadow-sm"
+              className="bg-[#DB2777] hover:bg-[#be1963] text-white font-medium text-xs sm:text-sm px-3 py-1.5 sm:px-4 sm:py-2 rounded-lg transition shadow-sm"
             >
               Sign Up
             </a>
