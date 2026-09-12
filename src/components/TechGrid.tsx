@@ -74,10 +74,11 @@ const TechGrid: React.FC = () => {
             Technologies
           </span>
         </h2>
-        <p>Pick one technology per category to build your ideal stack.</p>
+        <p className="text-gray-600 font-semibold">
+          Pick one technology per category to build your ideal stack.
+        </p>
       </div>
 
-      {/* লোডিং স্টেট */}
       {loading && (
         <div className="flex flex-col items-center justify-center min-h-75">
           <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
@@ -87,17 +88,14 @@ const TechGrid: React.FC = () => {
         </div>
       )}
 
-      {/* এরর স্টেট */}
       {error && (
         <div className="text-center text-red-500 font-medium py-10">
           Error: {error}
         </div>
       )}
 
-      {/* মূল কন্টেন্ট লেআউট */}
       {!loading && !error && (
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
-          {/* বামপাশের ৩ কলাম: টেকনোলজির গ্রিড */}
           <div className="lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-6">
             {techList.map((tech) => (
               <TechCard
@@ -109,7 +107,6 @@ const TechGrid: React.FC = () => {
             ))}
           </div>
 
-          {/* ডানপাশের ১ কলাম: Your Stack কার্ড */}
           <div className="lg:col-span-1">
             <YourStackPanel
               selectedTechs={selectedTechs}

@@ -17,7 +17,6 @@ const TechCard: React.FC<TechCardProps> = ({ tech, isSelected, onAdd }) => {
       }`}
     >
       <div>
-        {/* কার্ড হেডার */}
         <div className="flex items-center justify-between mb-4">
           <img
             src={tech.icon}
@@ -29,20 +28,17 @@ const TechCard: React.FC<TechCardProps> = ({ tech, isSelected, onAdd }) => {
           </span>
         </div>
 
-        {/* টেকনোলজির নাম ও ক্যাটাগরি */}
         <h3 className="text-xl font-bold text-gray-800 mb-1">{tech.name}</h3>
         <span className="inline-block text-xs font-medium text-gray-500 mb-3">
           {tech.category}
         </span>
 
-        {/* বিবরণ */}
         <p className="text-gray-600 text-sm line-clamp-3 mb-4">
           {tech.description}
         </p>
       </div>
 
       <div>
-        {/* কার্ড ফুটার (ডিফিকাল্টি ও রেটিং) */}
         <div className="pt-3 border-t border-gray-100 flex items-center justify-between text-xs font-medium text-gray-500 mb-4">
           <span className="bg-gray-100 px-2 py-1 rounded text-gray-700">
             {tech.difficulty}
@@ -51,8 +47,6 @@ const TechCard: React.FC<TechCardProps> = ({ tech, isSelected, onAdd }) => {
             ★ {tech.rating}
           </span>
         </div>
-
-        {/* Add Now বাটন */}
         <button
           onClick={() => onAdd(tech)}
           disabled={isSelected}

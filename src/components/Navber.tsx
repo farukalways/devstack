@@ -1,4 +1,5 @@
 import { useState } from "react";
+import barndLogo from "../assets/logo-text.png";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -7,11 +8,10 @@ const Navbar = () => {
     <nav className="bg-white shadow-md sticky top-0 z-50 w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* ১. স্মল স্ক্রিনের জন্য আইকন (Large Screen-এ অদৃশ্য থাকবে) */}
           <div className="flex md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-blue-600 focus:outline-none p-2"
+              className="text-gray-700 hover:text-[#EC4899] focus:outline-none p-2"
               aria-label="Toggle Menu"
             >
               {isMenuOpen ? (
@@ -50,42 +50,39 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* ২. লোগো (Small Screen-এ মাঝে, Large Screen-এ বাঁয়ে) */}
           <div className="flex-1 text-center md:flex-initial md:text-left">
             <a href="#" className="text-2xl font-bold text-blue-600">
-              MyLogo
+              <img src={barndLogo} alt="Barnd Logo" />
             </a>
           </div>
 
-          {/* ৩. লিস্ট আইটেম (Large Screen-এ মাঝে দেখাবে) */}
           <div className="hidden md:flex space-x-8 items-center justify-center">
             <a
               href="#"
-              className="text-gray-700 hover:text-blue-600 font-medium transition"
+              className="text-gray-700 hover:text-[#EC4899] font-medium transition"
             >
               Home
             </a>
             <a
               href="#"
-              className="text-gray-700 hover:text-blue-600 font-medium transition"
+              className="text-gray-700 hover:text-[#EC4899] font-medium transition"
             >
               About
             </a>
             <a
               href="#"
-              className="text-gray-700 hover:text-blue-600 font-medium transition"
+              className="text-gray-700 hover:text-[#EC4899] font-medium transition"
             >
               Services
             </a>
             <a
               href="#"
-              className="text-gray-700 hover:text-blue-600 font-medium transition"
+              className="text-gray-700 hover:text-[#EC4899] font-medium transition"
             >
               Contact
             </a>
           </div>
 
-          {/* ৪. সাইন-ইন এবং সাইন-আপ বোতাম */}
           <div className="flex items-center space-x-2 sm:space-x-4">
             <a
               href="#"
@@ -103,30 +100,29 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* মোবাইল ড্রপডাউন মেনু */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-100 px-4 pt-2 pb-4 space-y-1">
           <a
             href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#EC4899] hover:bg-gray-50"
           >
             Home
           </a>
           <a
             href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#EC4899] hover:bg-gray-50"
           >
             About
           </a>
           <a
             href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#EC4899] hover:bg-gray-50"
           >
             Services
           </a>
           <a
             href="#"
-            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-blue-600 hover:bg-gray-50"
+            className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-[#EC4899] hover:bg-gray-50"
           >
             Contact
           </a>

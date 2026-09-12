@@ -16,12 +16,9 @@ export interface TechItem {
   badge: string;
 }
 
-// ২. টাইপ-সেফ ফেচ ফাংশন (যা একটি Promise<TechItem[]> রিটার্ন করে)
 export const fetchTechData = async (): Promise<TechItem[]> => {
-  // ২ সেকেন্ডের কৃত্রিম ডিলে তৈরির প্রমিজ
   await new Promise((resolve) => setTimeout(resolve, 2000));
 
-  // public/data.json ফাইল থেকে ফেচ করা
   const response = await fetch("/data.json");
 
   if (!response.ok) {

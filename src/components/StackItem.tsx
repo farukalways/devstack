@@ -21,7 +21,6 @@ const StackItem: React.FC<StackItemProps> = ({ item, onRemove }) => {
         </div>
       </div>
 
-      {/* রিমুভ (Cross) বাটন */}
       <button
         onClick={() => onRemove(item.id)}
         className="text-gray-400 hover:text-red-500 hover:bg-red-50 w-6 h-6 rounded-full flex items-center justify-center transition font-bold text-sm"

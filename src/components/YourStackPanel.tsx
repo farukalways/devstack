@@ -16,7 +16,6 @@ const YourStackPanel: React.FC<YourStackPanelProps> = ({
 }) => {
   return (
     <div className="bg-white rounded-xl shadow-md border border-gray-200 p-5 sticky top-20">
-      {/* স্ট্যাক কার্ড হেডার */}
       <div className="flex items-center justify-between mb-4 border-b border-gray-100 pb-3">
         <div className="gap-2">
           <h3 className="text-lg font-bold text-gray-800">Your Stack</h3>
@@ -26,7 +25,6 @@ const YourStackPanel: React.FC<YourStackPanelProps> = ({
         </div>
       </div>
 
-      {/* সিলেক্ট করা টেকনোলজির মিনি কার্ড লিস্ট */}
       {selectedTechs.length === 0 ? (
         <div className="text-center py-8 text-gray-400 text-sm font-medium">
           No technologies added yet. Click "Add Now" to build your stack.
