@@ -23,9 +23,13 @@
 
 ---
 
+## Project Live Link
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Visit%20Site-brightgreen?style=for-the-badge)](https://devstack-phi.vercel.app/)
+
 ## Project Structure
 
-```
+```bash
 src/
 ├── assets/
 │
@@ -50,7 +54,15 @@ src/
 
 ```bash
 git clone https://github.com/farukalways/devstack.git
+
+```
+
+```bash
 npm install
+
+```
+
+```bash
 npm run dev
 ```
 
