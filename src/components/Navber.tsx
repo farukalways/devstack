@@ -15,7 +15,6 @@ const Navbar = () => {
               aria-label="Toggle Menu"
             >
               {isMenuOpen ? (
-                /* Cross (X) Icon SVG */
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"
@@ -31,7 +30,6 @@ const Navbar = () => {
                   />
                 </svg>
               ) : (
-                /* Hamburger Menu Icon SVG */
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-6 w-6"

@@ -8,7 +8,7 @@ const Banner = () => {
           <div className="w-full md:w-1/2 space-y-6">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
               Build Your Ideal, <br className="hidden sm:inline" />
-              <span className="bg-gradient-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">
+              <span className="bg-linear-to-r from-[#EC4899] to-[#8B5CF6] bg-clip-text text-transparent">
                 Development Stack
               </span>
             </h1>
@@ -21,7 +21,7 @@ const Banner = () => {
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <a
                 href="#"
-                className="bg-gradient-to-r from-[#F97316] to-[#EC4899] hover:opacity-90 text-white font-bold text-sm sm:text-base px-6 py-3 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg"
+                className="bg-linear-to-r from-[#F97316] to-[#EC4899] hover:opacity-90 text-white font-bold text-sm sm:text-base px-6 py-3 rounded-lg transition-all duration-300 shadow-md hover:shadow-lg"
               >
                 Explore Technologies
               </a>

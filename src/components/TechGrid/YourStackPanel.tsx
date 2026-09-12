@@ -1,7 +1,6 @@
 import React from "react";
 import type { TechItem } from "../../utils/fetchTechData";
 import StackItem from "./StackItem";
-// import StackItem from "./StackItem";
 
 interface YourStackPanelProps {
   selectedTechs: TechItem[];

@@ -10,7 +10,6 @@ const TechGrid: React.FC = () => {
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
 
-  // Selected technologies dynamic state (Your Stack)
   const [selectedTechs, setSelectedTechs] = useState<TechItem[]>([]);
 
   useEffect(() => {
@@ -33,7 +32,6 @@ const TechGrid: React.FC = () => {
     getData();
   }, []);
 
-  // অ্যাড করার হ্যান্ডলার
   const handleAddTech = (tech: TechItem) => {
     const isAlreadySelected = selectedTechs.some((item) => item.id === tech.id);
 
@@ -46,7 +44,6 @@ const TechGrid: React.FC = () => {
     toast.success(`${tech.name} added to your stack!`);
   };
 
-  // একটি সিঙ্গেল আইটেম রিমুভ করার হ্যান্ডলার
   const handleRemoveTech = (techId: string) => {
     const removed = selectedTechs.find((item) => item.id === techId);
     setSelectedTechs((prev) => prev.filter((item) => item.id !== techId));
@@ -56,7 +53,6 @@ const TechGrid: React.FC = () => {
     }
   };
 
-  // সব আইটেম একসাথে রিমুভ করার হ্যান্ডলার (Remove All)
   const handleRemoveAll = () => {
     if (selectedTechs.length === 0) return;
     setSelectedTechs([]);
