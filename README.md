@@ -25,8 +25,9 @@
 
 ## Project Structure
 
+```
 src/
-├── assets/  
+├── assets/
 │
 ├── components/ # Reusable UI components
 │ ├── Navbar.tsx
@@ -41,6 +42,7 @@ src/
 │
 ├── utils/ # Helper functions
 │ └── fetchTechData.ts
+```
 
 ---
 
