@@ -1,5 +1,5 @@
 import React from "react";
-import type { TechItem } from "../utils/fetchTechData";
+import type { TechItem } from "../../utils/fetchTechData";
 
 interface TechCardProps {
   tech: TechItem;

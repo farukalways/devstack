@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { fetchTechData, type TechItem } from "../utils/fetchTechData";
+import { fetchTechData, type TechItem } from "../../utils/fetchTechData";
 import YourStackPanel from "./YourStackPanel";
 import TechCard from "./TechCard";
 
